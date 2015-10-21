@@ -13,7 +13,6 @@ var calc = function(){
   }else{
     var result = ("This calculation is invalid.")
   }
-  var resultDisplay = result.toFixed(2)
   var final = $("#final");
-  final.html(resultDisplay);
+  final.html(result);
 }
