@@ -13,6 +13,12 @@ var calc = function(){
   }else{
     var result = ("This calculation is invalid.")
   }
+  var dp = ($("#dp").val());
   var final = $("#final");
-  final.html(result);
+  if($.isNumeric(result) == true){
+    resultDisplay = (result.toFixed(dp));
+    final.html(resultDisplay);
+  }else{
+    final.html(result);
+  }
 }
